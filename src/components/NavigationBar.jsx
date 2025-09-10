@@ -1,9 +1,10 @@
 import { useEffect, useState, useRef } from "react";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
-import Logo from "../assets/Logo.png";
+// import Logo from "../assets/Logo.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Search from "./Search";
 import CurrencySelector from "./CurrencySelector";
+import Logo from "../assets/Logo.svg";
 
 // Menu items data
 const menuItems = [
