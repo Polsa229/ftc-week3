@@ -2,7 +2,7 @@
 
 import { Link } from "react-router-dom";
 import HeroImageSlider from "./HeroImageSlider";
-import { IoChevronForward } from "react-icons/io5";
+import { IoChevronForwardCircleOutline } from "react-icons/io5";
 
 function HeroSection() {
   return (
@@ -54,11 +54,11 @@ function HeroSection() {
                 // onClick={() => scrollToSection(navigate, "/", "pricing")}
               >
                 <span>View Intro</span>
-                <IoChevronForward className="ml-2 h-6 w-6" />
+                <IoChevronForwardCircleOutline className="ml-2 h-6 w-6" />
               </button>
               <Link
                 to={"/products"}
-                className="bg-secondary  md:max-w-[187px] lg:w-full text-center text-primary hover:bg-primary-100 hover:text-secondary px-4 py-2 rounded-full transition"
+                className="bg-secondary md:max-w-[187px] lg:w-full text-center text-primary hover:bg-primary-100 hover:text-secondary px-4 py-2 rounded-full transition"
               >
                 Explore Now
               </Link>

@@ -32,7 +32,7 @@ export const appRoutes = [
   {
     path: "/product/:id",
     element: (
-      <DefaultLayout>
+      <DefaultLayout detail={true} >
         <Suspense fallback={<LoadingSpinner />}>
           <ProductDetail />
         </Suspense>

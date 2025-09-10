@@ -34,9 +34,9 @@ function ProductCard({ item, idKey = "id" }) {
         )}
       </div>
 
-      <div className="">
+      <div className="text-start">
         <h3 className="text-[16px] font-[700] mb-2">
-          {item.sku}-{item.name}
+          {`MO${item.sku}`}-{item.name}
         </h3>
         <div className="lg:flex items-center gap-2 mb-2">
           <p className="text-[12px] text-secondary-60">

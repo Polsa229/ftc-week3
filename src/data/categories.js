@@ -16,11 +16,17 @@ import AlaskanMalamute3 from "../assets/dogs/AlaskanMalamute3.png";
 import AlaskanMalamute4 from "../assets/dogs/AlaskanMalamute4.png";
 import AlaskanMalamute5 from "../assets/dogs/AlaskanMalamute5.png";
 
+import LovelyPeople1 from "../assets/lovelyPeople/1.png";
+import LovelyPeople2 from "../assets/lovelyPeople/2.png";
+import LovelyPeople3 from "../assets/lovelyPeople/3.png";
+import LovelyPeople4 from "../assets/lovelyPeople/4.png";
+import LovelyPeople5 from "../assets/lovelyPeople/5.png";
+
 import ShibaInu1 from "../assets/dogs/ShibaInu1.png";
 
 export const dogs = [
   {
-    sku: "MO502",
+    sku: 502,
     name: "Poodle Tiny Yellow",
     breed: "Poodle",
     age: "02 months",
@@ -47,17 +53,34 @@ export const dogs = [
       {
         author: "Customer 1",
         comment: "Très joueur et affectueux, parfait pour la famille !",
-        photo: "../assets/dogs/review1.jpg",
+        photo: LovelyPeople1,
       },
       {
         author: "Customer 2",
         comment: "Un chiot adorable, en bonne santé.",
-        photo: "../assets/dogs/review2.jpg",
+        photo: LovelyPeople2,
+      },
+      {
+        author: "Customer 3",
+        comment:
+          "Facile à éduquer, il s'adapte très vite à son nouvel environnement.",
+        photo: LovelyPeople3,
+      },
+      {
+        author: "Customer 4",
+        comment:
+          "Toujours plein d'énergie, il adore les promenades et les câlins.",
+        photo: LovelyPeople4,
+      },
+      {
+        author: "Customer 5",
+        comment: "Un compagnon fidèle et calme, parfait pour les enfants.",
+        photo: LovelyPeople5,
       },
     ],
   },
   {
-    sku: "MO102",
+    sku: 102,
     name: "Poodle Tiny Sepia",
     breed: "Poodle",
     age: "02 months",
@@ -80,16 +103,39 @@ export const dogs = [
     dewormed: true,
     microchip: true,
     cert: true,
+
     reviews: [
       {
+        author: "Customer 1",
+        comment: "Très joueur et affectueux, parfait pour la famille !",
+        photo: LovelyPeople1,
+      },
+      {
+        author: "Customer 2",
+        comment: "Un chiot adorable, en bonne santé.",
+        photo: LovelyPeople2,
+      },
+      {
         author: "Customer 3",
-        comment: "Très calme et bien dressé dès le début.",
-        photo: "../assets/dogs/review3.jpg",
+        comment:
+          "Facile à éduquer, il s'adapte très vite à son nouvel environnement.",
+        photo: LovelyPeople3,
+      },
+      {
+        author: "Customer 4",
+        comment:
+          "Toujours plein d'énergie, il adore les promenades et les câlins.",
+        photo: LovelyPeople4,
+      },
+      {
+        author: "Customer 5",
+        comment: "Un compagnon fidèle et calme, parfait pour les enfants.",
+        photo: LovelyPeople5,
       },
     ],
   },
   {
-    sku: "MO512",
+    sku: 512,
     name: "Alaskan Malamute Grey",
     breed: "Alaskan Malamute",
     age: "02 months",
@@ -112,16 +158,39 @@ export const dogs = [
     dewormed: true,
     microchip: true,
     cert: true,
+
     reviews: [
       {
+        author: "Customer 1",
+        comment: "Très joueur et affectueux, parfait pour la famille !",
+        photo: LovelyPeople1,
+      },
+      {
+        author: "Customer 2",
+        comment: "Un chiot adorable, en bonne santé.",
+        photo: LovelyPeople2,
+      },
+      {
+        author: "Customer 3",
+        comment:
+          "Facile à éduquer, il s'adapte très vite à son nouvel environnement.",
+        photo: LovelyPeople3,
+      },
+      {
         author: "Customer 4",
-        comment: "Très énergique, mais tellement affectueux.",
-        photo: "../assets/dogs/review4.png",
+        comment:
+          "Toujours plein d'énergie, il adore les promenades et les câlins.",
+        photo: LovelyPeople4,
+      },
+      {
+        author: "Customer 5",
+        comment: "Un compagnon fidèle et calme, parfait pour les enfants.",
+        photo: LovelyPeople5,
       },
     ],
   },
   {
-    sku: "MO10078",
+    sku: 10078,
     name: "Shiba Inu Sepia",
     breed: "Shiba Inu",
     age: "02 months",
@@ -138,16 +207,34 @@ export const dogs = [
     dewormed: true,
     microchip: true,
     cert: true,
+
     reviews: [
       {
-        author: "Customer 5",
-        comment: "Un chien magnifique et plein d'énergie.",
-        photo: "../assets/dogs/review5.jpg",
+        author: "Customer 1",
+        comment: "Très joueur et affectueux, parfait pour la famille !",
+        photo: LovelyPeople1,
       },
       {
-        author: "Customer 6",
-        comment: "Très sociable, il adore jouer avec les enfants.",
-        photo: "../assets/dogs/review6.jpg",
+        author: "Customer 2",
+        comment: "Un chiot adorable, en bonne santé.",
+        photo: LovelyPeople2,
+      },
+      {
+        author: "Customer 3",
+        comment:
+          "Facile à éduquer, il s'adapte très vite à son nouvel environnement.",
+        photo: LovelyPeople3,
+      },
+      {
+        author: "Customer 4",
+        comment:
+          "Toujours plein d'énergie, il adore les promenades et les câlins.",
+        photo: LovelyPeople4,
+      },
+      {
+        author: "Customer 5",
+        comment: "Un compagnon fidèle et calme, parfait pour les enfants.",
+        photo: LovelyPeople5,
       },
     ],
   },

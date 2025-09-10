@@ -31,7 +31,7 @@ function BannerAdoptionSection() {
               <div className="w-[75%]">
                 <p className="text-secondary-300 text-[12px] font-[500] mb-6">
                   Adopt a pet and give it a home, <br />
-                  it will be love you back unconditionally.
+                  it will be love you back unconditionally.à
                 </p>
               </div>
 

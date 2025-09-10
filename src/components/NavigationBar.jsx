@@ -87,12 +87,20 @@ const NavigationBar = () => {
   // Manage active submenu item
   const location = useLocation();
   const [activeItem, setActiveItem] = useState(null);
+  const [currentLocation, setCurrentLocation] = useState(null);
+  const [hasChildren, setHasChildren] = useState(false);
 
   useEffect(() => {
+    // console.log("location.pathname : ", location.pathname);
     // Définir l'élément de menu actif en fonction du chemin d'accès actuel
     const matched = menuItems.find((item) =>
       location.pathname.startsWith(item.link)
     );
+    const link = location.pathname.split("/");
+    setCurrentLocation(link[1].toLowerCase());
+    setHasChildren(link.length > 2);
+    // console.log("hasChildren: ", link.length > 2);
+    // console.log("condiction: ", currentLocation === "product" && hasChildren);
     setActiveItem(matched?.id || null);
   }, [location.pathname]);
 
@@ -100,11 +108,17 @@ const NavigationBar = () => {
     <>
       {/* Navbar */}
       <nav
-        className={`z-30 ${
-          scrolled ? "fixed" : "sticky"
-        } top-0 w-full flex items-center lg:px-10 justify-center backdrop-blur-sm transition-all duration-300 ease-in-out text-[16px] ${
-          activeItem === "category" ? "bg-white" : "bg-primary"
-        } ${scrolled ? "" : "h-[57px]  lg:h-[100px]"}`}
+        className={`z-30 
+        
+        ${scrolled ? "fixed" : "sticky"} 
+        top-0 w-full flex items-center lg:px-10 justify-center backdrop-blur-sm transition-all duration-300 ease-in-out text-[16px] 
+        ${activeItem === "category" ? "bg-white" : "bg-primary"}
+        ${
+          currentLocation === "product" && hasChildren
+            ? "bg-white hidden md:flex"
+            : "bg-primary"
+        }
+         ${scrolled ? "" : "h-[57px]  lg:h-[100px]"}`}
       >
         <div className="w-full flex justify-between items-center gap-4 select-none">
           <button
@@ -120,7 +134,10 @@ const NavigationBar = () => {
             {/* rectangle jaune derrière le logo */}
             <div
               className={`${
-                activeItem === "category" ? "hidden" : "visible"
+                activeItem === "category" ||
+                (currentLocation === "product" && hasChildren)
+                  ? "hidden"
+                  : "visible"
               } absolute -top-[656px] lg:-bottom-[697px] -left-[398px] lg:-left-[335px] h-full w-full pointer-events-none z-0`}
             >
               <div className="rounded-[61px] lg:rounded-[99px] w-[635px] h-[635px] rotate-[19.42deg] lg:rotate-[25.23 deg] opacity-1 bg-primary-100 z-0" />

@@ -57,7 +57,7 @@ function Footer() {
       }}
     >
       <div className="rounded-lg bg-secondary grid grid-cols-12 gap-3 items-center justify-between p-4">
-        <div className=" col-span-12 md:col-span-4 lg:col-span-3 text-[#FDFDFD] font-[700] text-[20px] md:text-[24px] leading-[36px] ">
+        <div className="text-start col-span-12 md:col-span-4 lg:col-span-3 text-[#FDFDFD] font-[700] text-[20px] md:text-[24px] leading-[36px] ">
           Register now so you don't miss our programs
         </div>
         <div className="col-span-12 md:col-span-8 lg:col-span-9 bg-[#FFFFFF] p-2 rounded-lg">
