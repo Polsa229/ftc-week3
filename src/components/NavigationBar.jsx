@@ -102,13 +102,13 @@ const NavigationBar = () => {
       <nav
         className={`z-30 ${
           scrolled ? "fixed" : "sticky"
-        } top-0 w-full flex items-center px-10 justify-center backdrop-blur-sm transition-all duration-300 ease-in-out text-[16px] ${
+        } top-0 w-full flex items-center lg:px-10 justify-center backdrop-blur-sm transition-all duration-300 ease-in-out text-[16px] ${
           activeItem === "category" ? "bg-white" : "bg-primary"
         } ${scrolled ? "" : "h-[57px]  lg:h-[100px]"}`}
       >
         <div className="w-full flex justify-between items-center gap-4 select-none">
           <button
-            className="lg:hidden text-secondary-100 text-xl z-20"
+            className="lg:hidden text-secondary-100 text-xl z-20 px-4 py-1"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
