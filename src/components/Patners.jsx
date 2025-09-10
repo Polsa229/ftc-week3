@@ -15,7 +15,7 @@ import whiskas from "../assets/petSellers/whiskas.png";
 
 function Patners() {
   const patners = React.useMemo(
-    () => [bakers, butchers, felix, goodBoy, pedigree, sheba, whiskas],
+    () => [sheba, whiskas, bakers, butchers, felix, goodBoy, pedigree],
     []
   );
   const carouselRef = React.useRef(null);

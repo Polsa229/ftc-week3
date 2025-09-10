@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import BannerAdoption from "../assets/BannerAdoption.png";
-import dogLeg from "../assets/dogLeg.png";
+import dogLeg from "../assets/DogLeg.png";
 import { MdOutlinePlayCircle } from "react-icons/md";
 import { Link } from "react-router-dom";
 
@@ -12,10 +12,10 @@ function BannerAdoptionSection() {
       <div className="relative w-full flex flex-col md:grid md:grid-cols-2 items-center justify-between bg-gradient-to-br bg-[#FFB775] overflow-hidden rounded-[20px] md:rounded-[20px] ">
         {/* Texte */}
         <div className="text-secondary-80 relative h-full w-full flex justify-start">
-          <div className="h-full w-full bg-primary absolute z-10 rounded-tl-[99px] rotate-[154.77deg] -right-[100px] hidden md:flex" />
-          <div className="h-full w-[75%] xl:w-[90%] bg-primary absolute z-20 hidden md:flex" />
+          <div className="h-full w-full bg-primary absolute z-10 rounded-tl-[99px] rotate-[154.77deg] hidden md:flex" />
+          <div className="h-full w-[50%]  bg-primary absolute z-20 hidden md:flex" />
 
-          <div className="relative p-6 z-20 flex justify-center items-center w-full xl:w-[70%]">
+          <div className="relative p-6 z-20 flex justify-center items-center w-full ">
             <div className="pl-6">
               <div className="flex gap-4">
                 <h1 className="text-[52px] font-[800]  leading-[60px] md:leading-[68px]">

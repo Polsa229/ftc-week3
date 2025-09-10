@@ -23,7 +23,7 @@ function BannerSection() {
         {/* Texte */}
         <div className="text-secondary-80 relative h-full w-full flex justify-end">
           <div className="h-full w-full bg-primary absolute z-10 rotate-[25.23deg] rounded-bl-[99px] -top-[50px] -left-[100px] hidden md:flex" />
-          <div className="h-full w-[50%]  xl:w-[90%] bg-primary absolute ml-[500px] z-20 hidden md:flex" />
+          <div className="h-full w-[50%]  bg-primary absolute ml-[500px] z-20 hidden md:flex" />
 
           <div className="relative p-6 z-20 xl:w-[70%] ">
             <div className="w-full justify-end p-2">

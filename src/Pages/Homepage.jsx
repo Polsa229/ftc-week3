@@ -10,6 +10,7 @@ import AnimatedSection from "./../components/AnimatedSection";
 import Patners from "../components/Patners";
 import BannerAdoptionSection from "../components/BannerAdoptionSection";
 import KnowledgeSection from "../components/KnowledgeSection";
+import Footer from "../components/Footer";
 
 function Homepage() {
   return (
@@ -34,22 +35,24 @@ function Homepage() {
           <OurProducts />
         </AnimatedSection>
       </div>
-
       <div id="patners">
         <AnimatedSection>
           <Patners />
         </AnimatedSection>
       </div>
-
       <div id="banner_adoption">
         <AnimatedSection>
           <BannerAdoptionSection />
         </AnimatedSection>
       </div>
-      
       <div id="knowledge">
         <AnimatedSection>
           <KnowledgeSection />
+        </AnimatedSection>
+      </div>
+      <div id="footer">
+        <AnimatedSection>
+          <Footer />
         </AnimatedSection>
       </div>
     </>

@@ -2,26 +2,29 @@
 
 import * as React from "react";
 import { Link } from "react-router-dom";
-import ProductCard from "./ProductCard";
 import { IoChevronForward } from "react-icons/io5";
 import knowledge1 from "../assets/knowledge/1.png";
 import knowledge2 from "../assets/knowledge/2.png";
 import knowledge3 from "../assets/knowledge/3.png";
+import { motion } from "framer-motion";
 
 const ArticleCard = ({ title, description, image }) => (
   <Link
     to="/#"
-    className="bg-white rounded-lg shadow-md overflow-hidden max-w-sm p-2"
+    className="p-2 rounded-lg shadow-md transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-secondary cursor-pointer"
+    // className="bg-white rounded-lg shadow-md overflow-hidden max-w-sm p-2"
   >
-    <img src={image} alt={title} className="w-full h-48 object-cover" />
+    <img src={image} alt={title} className="w-full h-48 object-cover rounded-lg" />
     <div className="p-4">
       <span className="text-[10px] font-[700] mb-2 p-1 rounded-full bg-[#00A7E7] text-[#FDFDFD] ">
         Pet knowledge
       </span>
-      <h3 className="text-[16px] font-[700] mb-2 text-secondary-100">
+      <h3 className="text-[16px] font-[700] text-secondary-100  leading-[24px]">
         {title}
       </h3>
-      <p className="text-[14px] font-[400] text-secondary-60">{description}</p>
+      <p className="text-[14px] font-[400] text-secondary-60  leading-[20px]">
+        {description}
+      </p>
     </div>
   </Link>
 );
@@ -32,14 +35,14 @@ function KnowledgeSection() {
       {
         title: "What is a Pomeranian? How to Identify Pomeranian Dogs",
         description:
-          "The Pomeranian, also known as the Pomeranian (Pom dog), is always in the top of the cutest pets. Not only that, the small, lovely, smart, friendly, and skillful circus dog breed.",
+          "The Pomeranian, also known as the Pomeranian (Pom dog), is always in the top of the cutest pets. Not only that, the small, lovely, smart, friendly, and skillful circus...",
         image: knowledge1,
         link: "/articles/pomeranian",
       },
       {
         title: "Dog Diet You Need to Know",
         description:
-          "Dividing a dog's diet may seem simple at first, but there are some rules you should know so that your dog can easily absorb the nutrients in the diet. For those who are just starting to raise dogs, especially newborn puppies with relatively weak resistance.",
+          "Dividing a dog's diet may seem simple at first, but there are some rules you should know so that your dog can easily absorb the nutrients in the diet. For those who are just starting to raise dogs, especially...",
         image: knowledge2,
         link: "/articles/dog-diet",
       },
@@ -75,7 +78,7 @@ function KnowledgeSection() {
         </Link>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-4">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 xxl:grid-cols-4 gap-6 mb-4">
         {items.map(async (item, index) => (
           <ArticleCard
             key={index}
