@@ -1,7 +1,7 @@
 // @flow strict
 
 import * as React from "react";
-import HeroImage1 from "../assets/bannerImages.png";
+import HeroImage1 from "../assets/BannerImages.png";
 import { MdOutlinePlayCircle } from "react-icons/md";
 import { Link } from "react-router-dom";
 
@@ -22,10 +22,10 @@ function BannerSection() {
 
         {/* Texte */}
         <div className="text-secondary-80 relative h-full w-full flex justify-end">
-          <div className="h-full w-full bg-primary absolute z-10 rotate-[25.23deg] rounded-bl-[99px] -bottom-[20px] -left-[200px] hidden md:flex" />
-          <div className="h-full w-full  xl:w-[90%] bg-primary absolute ml-[500px] z-20 hidden md:flex" />
+          <div className="h-full w-full bg-primary absolute z-10 rotate-[25.23deg] rounded-bl-[99px] -top-[50px] -left-[100px] hidden md:flex" />
+          <div className="h-full w-[50%]  xl:w-[90%] bg-primary absolute ml-[500px] z-20 hidden md:flex" />
 
-          <div className="relative p-6 z-20 xl:w-[70%]">
+          <div className="relative  p-6 z-20 xl:w-[70%]">
             <h1 className="w-full text-center md:text-end text-[36px] md:text-[52px] font-[700] md:font-[800]  leading-[60px] md:leading-[68px]">
               One More Friend
             </h1>
