@@ -36,7 +36,7 @@ function NewsSection() {
       <div className=" flex justify-center items-center w-full">
         <Link
           to={"/products"}
-          className="flex lg:hidden  border border-secondary lg:w-full md:max-w-[187px] text-secondary px-4 py-2 rounded-full hover:bg-secondary hover:text-primary-100 transition  items-center justify-center"
+          className="flex lg:hidden  border border-secondary w-full md:max-w-[187px] text-secondary px-4 py-2 rounded-full hover:bg-secondary hover:text-primary-100 transition  items-center justify-center"
         >
           <span>View more</span>
           <IoChevronForward className="ml-2 h-6 w-6" />

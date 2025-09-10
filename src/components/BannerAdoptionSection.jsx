@@ -34,14 +34,15 @@ function BannerAdoptionSection() {
                   it will be love you back unconditionally.
                 </p>
               </div>
-              <div className="flex w-full md:justify-between gap-4">
+
+              <div className="w-full flex justify-start gap-4 mt-4">
                 <Link
                   to="/products"
-                  className="w-full bg-secondary text-primary h-[48px] flex justify-center items-center px-4 py-2 rounded-full hover:bg-primary-100 hover:text-secondary transition"
+                  className="bg-secondary text-primary h-[48px] flex items-center px-4 py-2 rounded-full hover:bg-primary-100 hover:text-secondary transition"
                 >
                   Explore Now
                 </Link>
-                <button className="w-full border border-secondary text-secondary px-4 py-2 rounded-full hover:bg-secondary hover:text-primary-100 transition flex justify-center items-center">
+                <button className="border border-secondary text-secondary px-4 py-2 rounded-full hover:bg-secondary hover:text-primary-100 transition flex items-center">
                   View Intro <MdOutlinePlayCircle className="ml-2 h-6 w-6" />
                 </button>
               </div>

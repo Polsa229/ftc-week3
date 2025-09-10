@@ -25,28 +25,30 @@ function BannerSection() {
           <div className="h-full w-full bg-primary absolute z-10 rotate-[25.23deg] rounded-bl-[99px] -top-[50px] -left-[100px] hidden md:flex" />
           <div className="h-full w-[50%]  xl:w-[90%] bg-primary absolute ml-[500px] z-20 hidden md:flex" />
 
-          <div className="relative  p-6 z-20 xl:w-[70%]">
-            <h1 className="w-full text-center md:text-end text-[36px] md:text-[52px] font-[700] md:font-[800]  leading-[60px] md:leading-[68px]">
-              One More Friend
-            </h1>
-            <h2 className="w-full text-center md:text-end text-[24px] md:text-[36px] font-[700] ld:font-[700] mb-4">
-              Thousands More Fun!
-            </h2>
-            <p className="text-secondary-300 text-center md:text-end text-[12px] font-[500] mb-6">
-              Having a pet means you have more joy, a new friend, a happy person
-              who will always be with you to have fun. We have 200+ different
-              pets that can meet your needs!
-            </p>
-            <div className="flex w-full md:justify-between gap-4">
-              <button className="w-full border border-secondary text-secondary px-4 py-2 rounded-full hover:bg-secondary hover:text-primary-100 transition flex justify-center items-center">
-                View Intro <MdOutlinePlayCircle className="ml-2 h-6 w-6" />
-              </button>
-              <Link
-                to="/products"
-                className="w-full bg-secondary text-primary h-[48px] flex justify-center items-center px-4 py-2 rounded-full hover:bg-primary-100 hover:text-secondary transition"
-              >
-                Explore Now
-              </Link>
+          <div className="relative p-6 z-20 xl:w-[70%] ">
+            <div className="w-full justify-end p-2">
+              <h1 className="w-full text-center md:text-end text-[36px] md:text-[52px] font-[700] md:font-[800]  leading-[60px] md:leading-[68px]">
+                One More Friend
+              </h1>
+              <h2 className="w-full text-center md:text-end text-[24px] md:text-[36px] font-[700] ld:font-[700] mb-4">
+                Thousands More Fun!
+              </h2>
+              <p className="text-secondary-300 text-center md:text-end text-[12px] font-[500] mb-6">
+                Having a pet means you have more joy, a new friend, a happy
+                person who will always be with you to have fun. We have 200+
+                different pets that can meet your needs!
+              </p>
+              <div className="w-full flex justify-end gap-4 mt-4">
+                <button className="border border-secondary text-secondary px-4 py-2 rounded-full hover:bg-secondary hover:text-primary-100 transition flex items-center">
+                  View Intro <MdOutlinePlayCircle className="ml-2 h-6 w-6" />
+                </button>
+                <Link
+                  to="/products"
+                  className="bg-secondary text-primary h-[48px] flex items-center px-4 py-2 rounded-full hover:bg-primary-100 hover:text-secondary transition"
+                >
+                  Explore Now
+                </Link>
+              </div>
             </div>
           </div>
         </div>

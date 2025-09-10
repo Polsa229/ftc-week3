@@ -30,7 +30,7 @@ function ProductCard({ item, idKey = "id" }) {
             className="w-full h-[169px]  lg:h-[264px] object-cover rounded-md"
           />
         ) : (
-          <div className="w-full h-40 object-cover rounded-md bg-secondary-60" />
+          <div className="w-full h-[169px]  lg:h-[264px] object-cover rounded-md bg-secondary-60" />
         )}
       </div>
 

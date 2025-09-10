@@ -9,6 +9,7 @@ import OurProducts from "../components/OurProducts";
 import AnimatedSection from "./../components/AnimatedSection";
 import Patners from "../components/Patners";
 import BannerAdoptionSection from "../components/BannerAdoptionSection";
+import KnowledgeSection from "../components/KnowledgeSection";
 
 function Homepage() {
   return (
@@ -43,6 +44,12 @@ function Homepage() {
       <div id="banner_adoption">
         <AnimatedSection>
           <BannerAdoptionSection />
+        </AnimatedSection>
+      </div>
+      
+      <div id="knowledge">
+        <AnimatedSection>
+          <KnowledgeSection />
         </AnimatedSection>
       </div>
     </>
