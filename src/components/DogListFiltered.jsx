@@ -1,6 +1,7 @@
 // @flow strict
 import  React, { useEffect, useMemo, useState } from "react";
 import { dogs } from "../data/categories";
+import ColorSwatch from "./ColorSwatch";
 
 function DogListFiltered({
   initialDogList,
@@ -14,6 +15,7 @@ function DogListFiltered({
     minPrice: null,
     maxPrice: null,
   });
+  
   const [filteredItems, setFilteredItems] = useState(dogs);
 
   // console.log({ initialDogList });
@@ -64,12 +66,15 @@ function DogListFiltered({
 
   // Mettre à jour la race filtrée
   useEffect(() => {
+    console.log("Breed: ", filters.breed);
     setBreed(filters.breed);
   }, [filters.breed, setBreed]);
 
   // Gérer les changements de case à cocher
   const handleCheckboxChange = (filterType, value) => {
     setFilters((prev) => {
+      // console.log({ prev });
+      // console.log({ filterType });
       const currentValues = prev[filterType];
       const newValues = currentValues.includes(value)
         ? currentValues.filter((v) => v !== value)
@@ -130,7 +135,10 @@ function DogListFiltered({
                   onChange={() => handleCheckboxChange("color", color)}
                   className="rounded text-secondary-80 focus:ring-secondary"
                 />
-                <span className="text-secondary-60">{color}</span>
+                <div className="flex items-center gap-1">
+                  <ColorSwatch color={color.toLowerCase()} />
+                  <span className="text-secondary-60">{color}</span>
+                </div>
               </label>
             ))}
           </div>

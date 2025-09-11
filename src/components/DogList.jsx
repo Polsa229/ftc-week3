@@ -93,34 +93,9 @@ function DogList({ list }) {
 
   return (
     <div className="w-full">
+      
       {/* Liste des chiens */}
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-        {/* {currentItems.map((dog, index) => (
-          <div
-            key={dog.sku}
-            className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200"
-          >
-            <img
-              src={dog.gallery[0]}
-              alt={dog.name}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-lg font-semibold text-gray-800">
-                {dog.name}
-              </h3>
-              <p className="text-gray-600">
-                {dog.breed} • {dog.age}
-              </p>
-              <p className="text-gray-600">
-                {dog.gender} • {dog.color}
-              </p>
-              <p className="text-blue-600 font-bold mt-2">
-                {dog.price.toLocaleString()} €
-              </p>
-            </div>
-          </div>
-        ))} */}
         {currentItems.map(async (item, index) => (
           <ProductCard key={index} item={item} idKey="sku" />
         ))}
@@ -136,7 +111,7 @@ function DogList({ list }) {
             className={`p-2 rounded-md ${
               currentPage === 1
                 ? "text-white font-[700] text-[18px] leading-[24px] cursor-not-allowed"
-                : "text-secondary hover:bg-secondary"
+                : "text-primary hover:bg-secondary"
             }`}
           >
             <IoIosArrowRoundBack className="h-5 w-5 text-secondary" />
@@ -169,7 +144,7 @@ function DogList({ list }) {
             className={`p-2 rounded-md ${
               currentPage === totalPages
                 ? "text-white font-[700] text-[18px] leading-[24px] cursor-not-allowed"
-                : "text-secondary hover:bg-secondary"
+                : "text-primary hover:bg-secondary"
             }`}
           >
             <IoIosArrowRoundForward className="h-5 w-5 text-secondary" />

@@ -98,7 +98,7 @@ export default function Search() {
         <div className="w-full max-w-2xl ">
           <div className="relative p-px rounded-2xl  focus-within:shadow-lg transition-shadow duration-300 hover:shadow-secondary-60 dark:hover:shadow-secondary-60 focus-within:shadow-secondary-60 dark:focus-within:shadow-secondary-60">
             <buttton
-              className="flex items-center w-full px-4 py-1 bg-white flex-1 rounded-[15px] cursor-pointer select-none"
+              className="flex items-center w-full px-4 py-1 lg:bg-white flex-1 rounded-[15px] cursor-pointer select-none"
               onClick={() => {
                 setIsOpen(true);
                 inputRef.current?.focus();

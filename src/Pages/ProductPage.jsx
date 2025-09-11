@@ -13,7 +13,9 @@ import Footer from "../components/Footer";
 
 function ProductPage() {
   const initialDogList = useMemo(() => dogs, []);
-  const [filteredItems, setFilteredItems] = useState(dogs);
+  const [filteredItems, setFilteredItems] = useState(
+    Array.from({ length: 60 }, () => dogs).flat()
+  );
   const [filteredBreed, setFilteredBreed] = useState([]);
 
   const [showMobileFilters, setShowMobileFilters] = useState(false);
@@ -55,6 +57,7 @@ function ProductPage() {
                 <div className="hidden lg:flex justify-center items-center">
                   <span className="text-secondary font-[700] text-[24px] leading-[36px]">
                     {filteredBreed.length > 0 ? "" : filteredBreed[0]}
+                    {filteredBreed.length}
                     Dogs
                   </span>
                   <sub className="ml-2 text-secondary-60 text-[14px] font-[500] leading-[20px]">
@@ -78,7 +81,10 @@ function ProductPage() {
                 </button>
               </div>
 
-              <DogList list={[...filteredItems]} />
+              <DogList
+                list={filteredItems}
+                // list={Array.from({ length: 62 }, () => filteredItems).flat()}
+              />
             </div>
           </div>
         </div>

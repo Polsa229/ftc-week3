@@ -242,7 +242,62 @@ import ShibaInu1 from "../assets/dogs/ShibaInu1.png";
 
 
 // Liste complète des chiens avec toutes les propriétés
+
 export const dogs = [
+  {
+    sku: 102,
+    name: "Poodle Tiny Sepia",
+    breed: "Poodle",
+    age: "02 months",
+    gender: "Male",
+    location: "Vietnam",
+    color: "Silver",
+    size: "Small",
+    price: 6000000,
+    gallery: [
+      PoodleTinySepia1,
+      PoodleTinySepia2,
+      PoodleTinySepia3,
+      PoodleTinySepia4,
+      PoodleTinySepia5,
+    ],
+    Publicate_date: "12-oct-2022",
+    Additionnal_Informations:
+      "Pure breed shih Tzu, Godd body structure. With MKA cert and Microchip. Father from champion lineage",
+    vaccinated: true,
+    dewormed: true,
+    microchip: true,
+    cert: true,
+    reviews: [
+      {
+        author: "Customer 1",
+        comment: "Très joueur et affectueux, parfait pour la famille !",
+        photo: LovelyPeople1,
+      },
+      {
+        author: "Customer 2",
+        comment: "Un chiot adorable, en bonne santé.",
+        photo: LovelyPeople2,
+      },
+      {
+        author: "Customer 3",
+        comment:
+          "Facile à éduquer, il s'adapte très vite à son nouvel environnement.",
+        photo: LovelyPeople3,
+      },
+      {
+        author: "Customer 4",
+        comment:
+          "Toujours plein d'énergie, il adore les promenades et les câlins.",
+        photo: LovelyPeople4,
+      },
+      {
+        author: "Customer 5",
+        comment: "Un compagnon fidèle et calme, parfait pour les enfants.",
+        photo: LovelyPeople5,
+      },
+    ],
+  },
   {
     sku: 502,
     name: "Poodle Tiny Yellow",
@@ -250,7 +305,7 @@ export const dogs = [
     age: "02 months",
     gender: "Female",
     location: "Vietnam",
-    color: "Yellow",
+    color: "Tan",
     size: "Small",
     price: 3900000,
     gallery: [
@@ -304,7 +359,7 @@ export const dogs = [
     age: "02 months",
     gender: "Male",
     location: "Vietnam",
-    color: "Grey",
+    color: "Red",
     size: "Large",
     price: 8900000,
     gallery: [
@@ -352,13 +407,13 @@ export const dogs = [
     ],
   },
   {
-    sku: 10078,
+    sku: 1000078,
     name: "Shiba Inu Sepia",
     breed: "Shiba Inu",
     age: "02 months",
     gender: "Female",
     location: "Vietnam",
-    color: "Apricot & Tan",
+    color: "Red",
     size: "Medium",
     price: 34000000,
     gallery: [ShibaInu1],
@@ -437,7 +492,7 @@ export const dogs = [
     age: "04 months",
     gender: "Female",
     location: "Canada",
-    color: "Golden",
+    color: "Apricot",
     size: "Large",
     price: 2800000,
     gallery: [PoodleTinyYellow1, PoodleTinyYellow2], // Utilisation d'images existantes
@@ -463,7 +518,7 @@ export const dogs = [
     age: "03 months",
     gender: "Male",
     location: "Germany",
-    color: "Black & Tan",
+    color: "Black & White",
     size: "Large",
     price: 3200000,
     gallery: [ShibaInu1], // Utilisation d'images existantes
@@ -489,7 +544,7 @@ export const dogs = [
     age: "02 months",
     gender: "Female",
     location: "France",
-    color: "Brindle",
+    color: "Apricot",
     size: "Small",
     price: 4500000,
     gallery: [PoodleTinySepia1, PoodleTinySepia2], // Utilisation d'images existantes

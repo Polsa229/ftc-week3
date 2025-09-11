@@ -3,7 +3,7 @@
 import * as React from "react";
 import { MdOutlinePlayCircle } from "react-icons/md";
 import { Link } from "react-router-dom";
-import HeroDogsImage from "../assets/HeroDogImage.png";
+import HeroDogImage from "../assets/HeroDogImage.png";
 
 function BannerCategorySection() {
   return (
@@ -13,7 +13,7 @@ function BannerCategorySection() {
         <div className="hidden md:flex w-full md:w-full h-full justify-center items-end  relative overflow-hidden">
           {/* <div className="absolute h-full w-full z-0 -bottom-[180px] -left-[50px] rounded-tl-[99px] rotate-[28.25deg] bg-secondary-80" /> */}
           <img
-            src={HeroDogsImage}
+            src={HeroDogImage}
             alt="dogs"
             className="object-fit rounded-xl w-[513px] h-[342px] transition-opacity duration-1000 ease-in-out relative z-20"
             style={{ borderRadius: "11.79px" }}
@@ -72,7 +72,7 @@ function BannerCategorySection() {
         <div className="flex md:hidden w-full md:w-[50%] justify-center items-end md:mt-0 relative z-0">
           {/* <div className="absolute h-[50%] w-full z-10 -top-[70px] rounded-br-[75px] rotate-[11.41deg] bg-primary" /> */}
           <img
-            src={HeroDogsImage} // ou HeroImage2
+            src={HeroDogImage} // ou HeroImage2
             alt="Woman with dog"
             className="object-fit rounded-xl w-full max-w-[500px] transition-opacity duration-1000 ease-in-out relative z-30"
             style={{ borderRadius: "11.79px" }}

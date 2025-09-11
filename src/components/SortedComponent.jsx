@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import { IoChevronDownSharp } from "react-icons/io5";
 
 const SortedComponent = ({
-  options = ["Popular", "Liked"],
+  options = ["Popular", "Price", "Newest"],
   selected,
   onChange,
   label = "Sort by",
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div className="relative w-full max-w-[200px]">
       {/* Bouton principal */}
@@ -34,7 +33,7 @@ const SortedComponent = ({
           {options.map((value, index) => (
             <div
               key={index}
-              className={`flex items-center justify-center gap-2 px-4 py-2 text-secondary hover:bg-secondary-60 hover:rounded-lg hover:text-primary hover:font-bold cursor-pointer ${
+              className={`flex items-center justify-center gap-2 px-4 text-secondary hover:bg-secondary-60 hover:rounded-lg hover:text-primary hover:font-bold cursor-pointer ${
                 value === selected ? "font-bold text-primary" : ""
               }`}
               onClick={() => {
