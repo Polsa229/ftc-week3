@@ -48,7 +48,7 @@ function DogDetails({ dog }) {
 
   return (
     <div className="text-start">
-      <div className="border  rounded-lg px-6 mb-2">
+      <div className="border  lg:border-0 rounded-lg px-6 mb-2">
         <div className="flex md:hidden justify-center py-4">
           <div className="bg-[#CCD1D2] h-[6px] w-[40px] rounded-[10px]" />
         </div>
@@ -75,13 +75,13 @@ function DogDetails({ dog }) {
         <div className="w-full flex justify-start gap-4 my-4">
           <Link
             to="/products"
-            className="bg-secondary text-primary flex items-center px-4 py-2 rounded-full hover:bg-primary-100 hover:text-secondary transition"
+            className="bg-secondary text-white flex items-center px-4 py-2 rounded-full hover:bg-primary-100 hover:text-secondary transition"
           >
             Contact us
           </Link>
-          <button className="border border-secondary text-secondary px-4 py-2 rounded-full hover:bg-secondary hover:text-primary-100 transition flex items-center">
-            <IoChatboxEllipsesOutline className="mr-2 h-6 w-6" /> Chat with
-            Monito
+          <button className="border-2 border-secondary-80 text-secondary-80 font-[700]  px-4 py-2 rounded-full hover:bg-secondary hover:text-primary-100 transition flex items-center">
+            <IoChatboxEllipsesOutline className="mr-2 h-6 w-6 " />{" "}
+            Chat with Monito
           </button>
         </div>
       </div>

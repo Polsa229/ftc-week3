@@ -108,7 +108,7 @@ function HeroSection() {
         <div className="mt-auto h-full flex flex-col items-end justify-end lg:relative">
           <div className="absolute lg:text-right p-4 h-full w-full flex justify-start items-start ">
             <div
-              className="hidden lg:visible absolute bg-primary-100 pointer-events-none  z-10 -rotate-[-25.23deg] top-[55px] lg:top-[30px] right-10 lg:left-[50px]"
+              className="hidden lg:flex absolute bg-primary-100 pointer-events-none  z-10 -rotate-[-25.23deg] top-[55px] lg:top-[30px] right-10 lg:left-[50px]"
               style={{
                 width: "15px",
                 height: "15px",
@@ -121,7 +121,7 @@ function HeroSection() {
             />
 
             <div
-              className="hidden lg:visible absolute bg-primary-100  pointer-events-none z-10 -rotate-[-25.23deg] top-[90px] lg:top-[90px] right-[80px] lg:left-0"
+              className="hidden lg:flex absolute bg-primary-100  pointer-events-none z-10 -rotate-[-25.23deg] top-[90px] lg:top-[90px] right-[80px] lg:left-0"
               style={{
                 width: "21px",
                 height: "21px",
@@ -133,7 +133,7 @@ function HeroSection() {
             />
 
             <div
-              className="hidden lg:visible absolute bg-secondary pointer-events-none z-10 rotate-[9.35deg] top-[100px] lg:top-[100px] right-[80px] lg:left-0"
+              className="hidden lg:flex absolute bg-secondary pointer-events-none z-10 rotate-[9.35deg] top-[100px] lg:top-[100px] right-[80px] lg:left-0"
               style={{
                 width: "21px",
                 height: "21px",

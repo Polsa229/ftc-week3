@@ -92,13 +92,15 @@ function DogListFiltered({
   };
 
   return (
-    <div className="px-6  bg-white rounded-lg shadow-md">
+    <div className="px-6  bg-white ">
       <h2 className="text-2xl font-bold mb-6 text-gray-800">Filtres</h2>
 
       <div className="space-y-6">
         {/* Filtre Genre */}
-        <div>
-          <h3 className="font-semibold text-lg mb-3 text-gray-700">Gender</h3>
+        <div className="border-b border-secondary-10">
+          <h3 className="font-[700] text-[16px] mb-3 text-secondary-100">
+            Gender
+          </h3>
           <div className="space-y-2">
             {filterOptions.genders.map((gender) => (
               <label key={gender} className="flex items-center space-x-2">
@@ -106,17 +108,19 @@ function DogListFiltered({
                   type="checkbox"
                   checked={filters.gender.includes(gender)}
                   onChange={() => handleCheckboxChange("gender", gender)}
-                  className="rounded text-blue-600 focus:ring-blue-500"
+                  className="rounded text-secondary-60 focus:ring-secondary-80"
                 />
-                <span className="text-gray-700">{gender}</span>
+                <span className="text-secondary-60">{gender}</span>
               </label>
             ))}
           </div>
         </div>
 
         {/* Filtre Couleur */}
-        <div>
-          <h3 className="font-semibold text-lg mb-3 text-gray-700">Color</h3>
+        <div className="border-b border-secondary-10">
+          <h3 className="font-[700] text-[16px] mb-3 text-secondary-100">
+            Color
+          </h3>
           <div className="space-y-2">
             {filterOptions.colors.map((color) => (
               <label key={color} className="flex items-center space-x-2">
@@ -124,58 +128,62 @@ function DogListFiltered({
                   type="checkbox"
                   checked={filters.color.includes(color)}
                   onChange={() => handleCheckboxChange("color", color)}
-                  className="rounded text-blue-600 focus:ring-blue-500"
+                  className="rounded text-secondary-80 focus:ring-secondary"
                 />
-                <span className="text-gray-700">{color}</span>
+                <span className="text-secondary-60">{color}</span>
               </label>
             ))}
           </div>
         </div>
 
         {/* Filtre Prix */}
-        <div>
-          <h3 className="font-semibold text-lg mb-3 text-gray-700">Price</h3>
+        <div className="border-b border-secondary-10 pb-2">
+          <h3 className="font-[700] text-[16px] mb-3 text-secondary-100">
+            Price
+          </h3>
           <div className="flex space-x-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-secondary-60 mb-1">
                 Min
               </label>
               <input
                 type="number"
                 value={filters.minPrice || ""}
                 onChange={(e) => handlePriceChange("minPrice", e.target.value)}
-                placeholder={filterOptions.minPrice.toLocaleString()}
-                className="w-full p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                placeholder={"Min"}
+                className="w-full p-2 border font-[500] text-[14px] text-secondary-80 border-secondary-80 rounded-md focus:ring-secondary focus:border-secondary"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-secondary-60 mb-1">
                 Max
               </label>
               <input
                 type="number"
                 value={filters.maxPrice || ""}
                 onChange={(e) => handlePriceChange("maxPrice", e.target.value)}
-                placeholder={filterOptions.maxPrice.toLocaleString()}
-                className="w-full p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                placeholder={"Max"}
+                className="w-full p-2 border font-[500] text-[14px] text-secondary-80 border-secondary-60 rounded-md focus:ring-secondary focus:border-secondary"
               />
             </div>
           </div>
         </div>
 
         {/* Filtre Race */}
-        <div>
-          <h3 className="font-semibold text-lg mb-3 text-gray-700">Breed</h3>
+        <div className="border-b border-secondary-10">
+          <h3 className="font-[700] text-[16px] mb-3 text-secondary-100">
+            Breed
+          </h3>
           <div className="space-y-2">
-            {filterOptions.breeds.map((breed) => (
+            {filterOptions.sizes.map((breed) => (
               <label key={breed} className="flex items-center space-x-2">
                 <input
                   type="checkbox"
                   checked={filters.breed.includes(breed)}
                   onChange={() => handleCheckboxChange("breed", breed)}
-                  className="rounded text-blue-600 focus:ring-blue-500"
+                  className="rounded text-secondary-80 focus:ring-secondary"
                 />
-                <span className="text-gray-700">{breed}</span>
+                <span className="text-secondary-60">{breed}</span>
               </label>
             ))}
           </div>

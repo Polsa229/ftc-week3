@@ -12,6 +12,7 @@ function ReviewsCustumerShown({ reviews }) {
     }
   }, [reviews]);
 
+  const [activeItem, setActiveItem] = useState(0);
   return (
     <motion.div
       layoutId={"reviewsItems"}
@@ -33,6 +34,8 @@ function ReviewsCustumerShown({ reviews }) {
               key={index}
               className={`relative p-1 flex-shrink-0`}
               // onClick={() => setActiveItem(index)}
+
+              onViewportEnter={() => setActiveItem(index)}
             >
               <img
                 src={review.photo}
@@ -62,6 +65,18 @@ function ReviewsCustumerShown({ reviews }) {
             </motion.div>
           ))}
         </motion.div>
+        <div className="flex justify-center items-center gap-2 mt-4">
+          {reviews.map((_, index) => (
+            <div
+              key={index}
+              className={`transition-all duration-300 rounded-full ${
+                index === activeItem
+                  ? "w-4 h-4 bg-primary"
+                  : "w-2 h-2 bg-secondary-60"
+              }`}
+            />
+          ))}
+        </div>
       </motion.div>
     </motion.div>
   );

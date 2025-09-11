@@ -13,6 +13,7 @@ import KnowledgeSection from "../components/KnowledgeSection";
 import Footer from "../components/Footer";
 
 function Homepage() {
+  document.title = "Ecommerce website";
   return (
     <>
       <div id="hero">

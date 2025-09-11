@@ -18,6 +18,7 @@ function ProductPage() {
 
   const [showMobileFilters, setShowMobileFilters] = useState(false);
   const [sorted, setSorted] = useState("Popular");
+  document.title = "Category || Ecommerce website";
 
   return (
     <>
@@ -39,7 +40,7 @@ function ProductPage() {
         <div className="relative my-5">
           <div className="grid gap-6 grid-cols-1 lg:grid-cols-4 px-4">
             {/* Filtres desktop */}
-            <div className="hidden lg:block lg:col-span-1">
+            <div className="hidden lg:block lg:col-span-1 bg-white z-20">
               <DogListFiltered
                 initialDogList={initialDogList}
                 setFilteredItems={setFilteredItems}
@@ -56,7 +57,10 @@ function ProductPage() {
                     {filteredBreed.length > 0 ? "" : filteredBreed[0]}
                     Dogs
                   </span>
-                  <sub className="ml-2 text-secondary-60 text-[14px] font-[500] leading-[20px]"> {filteredItems.length} puppies</sub>
+                  <sub className="ml-2 text-secondary-60 text-[14px] font-[500] leading-[20px]">
+                    {" "}
+                    {filteredItems.length} puppies
+                  </sub>
                 </div>
                 <SortedComponent
                   options={["Popular", "Liked", "Newest"]}
@@ -74,7 +78,7 @@ function ProductPage() {
                 </button>
               </div>
 
-              <DogList list={filteredItems} />
+              <DogList list={[...filteredItems]} />
             </div>
           </div>
         </div>
