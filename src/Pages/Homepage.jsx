@@ -13,7 +13,8 @@ import KnowledgeSection from "../components/KnowledgeSection";
 import Footer from "../components/Footer";
 
 function Homepage() {
-  document.title = "Ecommerce website";
+  document.title = "Monito";
+  
   return (
     <div className="mx-auto">
       <div id="hero">
@@ -21,37 +22,37 @@ function Homepage() {
           <HeroSection />
         </AnimatedSection>
       </div>
-      <div id="news">
+      <div className="max-w-7xl mx-auto" id="news">
         <AnimatedSection>
           <NewsSection />
         </AnimatedSection>
       </div>
-      <div id="banner">
+      <div className="max-w-7xl mx-auto" id="banner">
         <AnimatedSection>
           <BannerSection />
         </AnimatedSection>
       </div>
-      <div id="ourproducts">
+      <div className="max-w-7xl mx-auto" id="ourproducts">
         <AnimatedSection>
           <OurProducts />
         </AnimatedSection>
       </div>
-      <div id="patners">
+      <div className="max-w-7xl mx-auto" id="patners">
         <AnimatedSection>
           <Patners />
         </AnimatedSection>
       </div>
-      <div id="banner_adoption">
+      <div className="max-w-7xl mx-auto" id="banner_adoption">
         <AnimatedSection>
           <BannerAdoptionSection />
         </AnimatedSection>
       </div>
-      <div id="knowledge">
+      <div className="max-w-7xl mx-auto" id="knowledge">
         <AnimatedSection>
           <KnowledgeSection />
         </AnimatedSection>
       </div>
-      <div id="footer">
+      <div className="" id="footer">
         <AnimatedSection>
           <Footer />
         </AnimatedSection>

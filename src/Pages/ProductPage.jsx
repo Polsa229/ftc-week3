@@ -20,7 +20,7 @@ function ProductPage() {
 
   const [showMobileFilters, setShowMobileFilters] = useState(false);
   const [sorted, setSorted] = useState("Popular");
-  document.title = "Category || Ecommerce website";
+  document.title = `Category || Monito`;
 
   return (
     <>

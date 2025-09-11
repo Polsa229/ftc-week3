@@ -42,7 +42,7 @@ function ProductDetail() {
 
       if (filtered) {
         setProductItem(filtered);
-        document.title = `${filtered.name} - Product Detail`;
+        document.title = `${filtered.name} - Product Detail || Monito`;
       }
     }
   }, [id]);
