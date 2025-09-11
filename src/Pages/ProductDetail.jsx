@@ -52,7 +52,7 @@ function ProductDetail() {
   }
 
   return (
-    <div className="max-w-6xl mx-auto flex justify-center items-center relative">
+    <div className="flex justify-center items-center relative">
       {/* Header absolute mobile  */}
       <MobileHeaderDetailDog />
       {/* Header absolute mobile  */}

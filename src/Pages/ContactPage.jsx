@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 
 function ContactPage() {
   return (
-    <section className="max-w-6xl mx-auto">
+    <section className="">
       <div className="px-4">
         <Breadcrumb
           items={[
