@@ -8,8 +8,8 @@ import {
   IoChatboxEllipsesOutline,
   IoShareSocialOutline,
 } from "react-icons/io5";
-import GuaranteeOfPetIdentication from "../assets/GuaranteeOfPetIdentication.png";
-import HealthGuarantee from "../assets/HealthGuarantee.png";
+import GuaranteeOfPetIdentication from "../assets/GuaranteeOfPetIdentication.svg";
+import HealthGuarantee from "../assets/HealthGuarantee.svg";
 
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 

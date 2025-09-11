@@ -2,9 +2,8 @@
 
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { dogs } from "../data/categories";
 import { IoChevronForward } from "react-icons/io5";
-import productGift from "../assets/ProductGift.png";
+import productGift from "../assets/ProductGift.svg";
 
 import product1 from "../assets/products/1.png";
 import product2 from "../assets/products/2.png";
