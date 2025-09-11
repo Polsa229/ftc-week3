@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useCurrencyStore } from "../store/currencyStore";
 import { Link } from "react-router-dom";
 
-function ProductCard({ item, idKey = "id" }) {
+function ProductCard({ item, idKey = "sku" }) {
   // Utilisation directe du store Zustand
   const currency = useCurrencyStore((state) => state.currency);
   const convertAmount = useCurrencyStore((state) => state.convertAmount);

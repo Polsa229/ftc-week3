@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 function BannerAdoptionSection() {
   return (
-    <section className="w-full hidden md:flex flex-col md:flex-row items-center justify-between p-4">
+    <section className="w-full hidden lg:flex flex-col md:flex-row items-center justify-between p-4">
       <div className="relative w-full flex flex-col md:grid md:grid-cols-2 items-center justify-between bg-gradient-to-br bg-[#FFB775] overflow-hidden rounded-[20px] md:rounded-[20px] ">
         {/* Texte */}
         <div className="text-secondary-80 relative h-full w-full flex justify-start">
