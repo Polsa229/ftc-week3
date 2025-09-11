@@ -1,7 +1,6 @@
 // @flow strict
 
 import * as React from "react";
-import HeroImage1 from "../assets/BannerImages.png";
 import { MdOutlinePlayCircle } from "react-icons/md";
 import { Link } from "react-router-dom";
 import HeroDogsImage from "../assets/HeroDogImage.png";

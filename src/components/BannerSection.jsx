@@ -57,7 +57,7 @@ function BannerSection() {
         <div className="flex md:hidden w-full md:w-[50%] justify-center items-end md:mt-0 bg-secondary relative z-0">
           <div className="absolute h-[50%] w-full z-10 -top-[70px] rounded-br-[75px] rotate-[11.41deg] bg-primary" />
           <img
-            src={HeroImage1} // ou HeroImage2
+            src={BannerImages} // ou HeroImage2
             alt="Woman with dog"
             className="object-contain rounded-xl w-full max-w-[500px] transition-opacity duration-1000 ease-in-out relative z-30"
             style={{ borderRadius: "11.79px" }}
