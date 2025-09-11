@@ -5,33 +5,8 @@ import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import Logo from "../assets/Logo.svg";
 import { toast } from "react-toastify";
+import { menuItems } from "./NavigationBar";
 
-// Menu items data
-const menuItems = [
-  {
-    name: "Home",
-    id: "home",
-    link: "/#",
-  },
-  {
-    name: "Category",
-    link: "/products",
-    id: "category",
-    subMenu: null,
-  },
-  {
-    name: "About",
-    link: "/#",
-    id: "about",
-    subMenu: null,
-  },
-  {
-    name: "Contact",
-    link: "/#",
-    id: "contact",
-    subMenu: null,
-  },
-];
 
 function Footer() {
   const navigate = useNavigate();

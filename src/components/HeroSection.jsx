@@ -35,13 +35,49 @@ function HeroSection() {
               />
 
               {/* Texte */}
-              <span className="relative z-10 block text-[42px] lg:text-[60px]">
-                One more friend
-              </span>
-              <span className="text-[26px] lg:text-[46px]">
-                Thousands more fun!
+              <div className="relative flex justify-end">
+                <span className="w-full text-start z-10 block text-[42px] lg:text-[60px] m-0 ">
+                  One more friend
+                </span>
+                <div
+                  className="lg:hidden absolute bg-primary-100 pointer-events-none z-0 rotate-[25.23deg] -bottom-2 right-2"
+                  style={{
+                    width: "21px",
+                    height: "21px",
+                    opacity: 1,
+                    // top: "30px",
+                    // top: "-50px",
+                    borderRadius: "6px",
+                  }}
+                />
+              </div>
+              <span className="pr-[30px] text-[26px] lg:text-[46px]  relative">
+                <span className="z-10 ">Thousands more fun!</span>
+                <div
+                  className="lg:hidden absolute bg-primary-100 pointer-events-none z-0 rotate-[25.23deg] bottom-2 right-0 lg:left-0"
+                  style={{
+                    width: "21px",
+                    height: "21px",
+                    opacity: 1,
+                    // top: "30px",
+                    // top: "-50px",
+                    borderRadius: "6px",
+                  }}
+                />
+                <div
+                  className="lg:hidden absolute bg-secondary pointer-events-none z-0 rotate-[9.35deg] bottom-0 right-0 lg:left-0"
+                  style={{
+                    width: "21px",
+                    height: "21px",
+                    opacity: 1,
+                    // top: "30px",
+                    // top: "-50px",
+                    borderRadius: "6px",
+                  }}
+                />
               </span>
             </div>
+            
             <p className="text-secondary-300 font-[500] text-base text-[12px] md:text-[24px] w-full max-w-[621px] mt-[12px] md:mt-[24px]">
               Having a pet means you have more joy, a new friend, a happy person
               who will always be with you to have fun. We have 200+ different
@@ -72,7 +108,7 @@ function HeroSection() {
         <div className="mt-auto h-full flex flex-col items-end justify-end lg:relative">
           <div className="absolute lg:text-right p-4 h-full w-full flex justify-start items-start ">
             <div
-              className="absolute bg-primary-100 pointer-events-none  z-10 -rotate-[-25.23deg] top-[55px] lg:top-[30px] right-10 lg:left-[50px]"
+              className="hidden lg:visible absolute bg-primary-100 pointer-events-none  z-10 -rotate-[-25.23deg] top-[55px] lg:top-[30px] right-10 lg:left-[50px]"
               style={{
                 width: "15px",
                 height: "15px",
@@ -85,7 +121,7 @@ function HeroSection() {
             />
 
             <div
-              className="absolute bg-primary-100  pointer-events-none z-10 -rotate-[-25.23deg] top-[90px] lg:top-[90px] right-[80px] lg:left-0"
+              className="hidden lg:visible absolute bg-primary-100  pointer-events-none z-10 -rotate-[-25.23deg] top-[90px] lg:top-[90px] right-[80px] lg:left-0"
               style={{
                 width: "21px",
                 height: "21px",
@@ -97,7 +133,7 @@ function HeroSection() {
             />
 
             <div
-              className="absolute bg-secondary pointer-events-none z-10 rotate-[9.35deg] top-[100px] lg:top-[100px] right-[80px] lg:left-0"
+              className="hidden lg:visible absolute bg-secondary pointer-events-none z-10 rotate-[9.35deg] top-[100px] lg:top-[100px] right-[80px] lg:left-0"
               style={{
                 width: "21px",
                 height: "21px",

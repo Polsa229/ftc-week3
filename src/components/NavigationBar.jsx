@@ -7,7 +7,8 @@ import CurrencySelector from "./CurrencySelector";
 import Logo from "../assets/Logo.svg";
 
 // Menu items data
-const menuItems = [
+// eslint-disable-next-line react-refresh/only-export-components
+export const menuItems = [
   {
     name: "Home",
     id: "home",

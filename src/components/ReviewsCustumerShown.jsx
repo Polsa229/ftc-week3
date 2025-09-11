@@ -37,9 +37,9 @@ function ReviewsCustumerShown({ reviews }) {
               <img
                 src={review.photo}
                 alt={review.author}
-                width={400}
-                height={400}
-                className={`w-[328px] h-[353px] object-fit cursor-pointer relative  rounded-md pointer-events-none`}
+                // width={400}
+                // height={400}
+                className={`w-[353px] md:w-[328px] h-[353px] object-fit cursor-pointer relative  rounded-md pointer-events-none`}
               />
 
               {/* Hover overlay */}

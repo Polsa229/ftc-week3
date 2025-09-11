@@ -1,8 +1,9 @@
 // @flow strict
 
 import * as React from "react";
-import NavigationBar from "./NavigationBar";
+// import NavigationBar from "./NavigationBar";
 import BackToTop from "./BackToTop";
+import NavigationBar from './NavigationBarComponent';
 
 function DefaultLayout({ children }) {
   return (
