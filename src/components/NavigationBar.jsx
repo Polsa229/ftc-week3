@@ -1,38 +1,11 @@
 import { useEffect, useState, useRef } from "react";
-import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 // import Logo from "../assets/Logo.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Search from "./Search";
 import CurrencySelector from "./CurrencySelector";
 import Logo from "../assets/Logo.svg";
-
-// Menu items data
-// eslint-disable-next-line react-refresh/only-export-components
-export const menuItems = [
-  {
-    name: "Home",
-    id: "home",
-    link: "/#",
-  },
-  {
-    name: "Category",
-    link: "/products",
-    id: "category",
-    subMenu: null,
-  },
-  {
-    name: "About",
-    link: "/#",
-    id: "about",
-    subMenu: null,
-  },
-  {
-    name: "Contact",
-    link: "/#",
-    id: "contact",
-    subMenu: null,
-  },
-];
+import { menuItems } from "../data/menuItems";
 
 const NavigationBar = () => {
   const navigate = useNavigate();
@@ -164,6 +137,7 @@ const NavigationBar = () => {
                     : "hover:bg-secondary-100 hover:text-primary hover:font-bold p-2 rounded-lg transition"
                 }`}
                 onClick={() => navigate(item.link)}
+                title={item.link}
               >
                 <span
                 // className={`${

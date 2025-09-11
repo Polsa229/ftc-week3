@@ -5,7 +5,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import Logo from "../assets/Logo.svg";
 import { toast } from "react-toastify";
-import { menuItems } from "./NavigationBar";
+import { menuItems } from "../data/menuItems";
 
 
 function Footer() {

@@ -2,6 +2,7 @@
 import { lazy, Suspense } from "react";
 import DefaultLayout from "../components/DefaultLayout";
 import LoadingSpinner from "../Pages/LoadingSpinner";
+import ContactPage from "../Pages/ContactPage";
 
 const Homepage = lazy(() => import("../Pages/Homepage"));
 const ProductDetail = lazy(() => import("../Pages/ProductDetail"));
@@ -32,7 +33,7 @@ export const appRoutes = [
   {
     path: "/product/:id",
     element: (
-      <DefaultLayout detail={true} >
+      <DefaultLayout detail={true}>
         <Suspense fallback={<LoadingSpinner />}>
           <ProductDetail />
         </Suspense>
@@ -43,10 +44,16 @@ export const appRoutes = [
   //   path: "/about",
   //   element: <AboutPage />,
   // },
-  // {
-  //   path: "/contact",
-  //   element: <ContactPage />,
-  // },
+  {
+    path: "/contact",
+    element: (
+      <DefaultLayout>
+        <Suspense fallback={<LoadingSpinner />}>
+          <ContactPage />
+        </Suspense>
+      </DefaultLayout>
+    ),
+  },
   {
     path: "*",
     element: (

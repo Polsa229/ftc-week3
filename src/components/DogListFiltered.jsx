@@ -15,7 +15,7 @@ function DogListFiltered({
     minPrice: null,
     maxPrice: null,
   });
-  
+
   const [filteredItems, setFilteredItems] = useState(dogs);
 
   // console.log({ initialDogList });
@@ -66,7 +66,7 @@ function DogListFiltered({
 
   // Mettre à jour la race filtrée
   useEffect(() => {
-    console.log("Breed: ", filters.breed);
+    // console.log("Breed: ", filters.breed);
     setBreed(filters.breed);
   }, [filters.breed, setBreed]);
 
