@@ -93,9 +93,8 @@ function DogList({ list }) {
 
   return (
     <div className="w-full">
-      
       {/* Liste des chiens */}
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-6 mb-8">
         {currentItems.map(async (item, index) => (
           <ProductCard key={index} item={item} idKey="sku" />
         ))}

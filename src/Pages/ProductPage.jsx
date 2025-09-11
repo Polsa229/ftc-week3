@@ -14,7 +14,7 @@ import Footer from "../components/Footer";
 function ProductPage() {
   const initialDogList = useMemo(() => dogs, []);
   const [filteredItems, setFilteredItems] = useState(
-    Array.from({ length: 60 }, () => dogs).flat()
+    Array.from({ length: 48 }, () => dogs).flat()
   );
   const [filteredBreed, setFilteredBreed] = useState([]);
 
@@ -24,7 +24,7 @@ function ProductPage() {
 
   return (
     <>
-      <section className="">
+      <section className="max-w-6xl mx-auto">
         <div className="px-4">
           <Breadcrumb
             items={[
@@ -57,7 +57,6 @@ function ProductPage() {
                 <div className="hidden lg:flex justify-center items-center">
                   <span className="text-secondary font-[700] text-[24px] leading-[36px]">
                     {filteredBreed.length > 0 ? "" : filteredBreed[0]}
-                    {filteredBreed.length}
                     Dogs
                   </span>
                   <sub className="ml-2 text-secondary-60 text-[14px] font-[500] leading-[20px]">
@@ -94,7 +93,7 @@ function ProductPage() {
       </section>
 
       {/* Drawner Mobile Filter */}
-      <div className="relative my-5">
+      <div className="relative my-5 max-w-lg mx-auto">
         {/* Overlay pour mobile quand les filtres sont ouverts */}
         {showMobileFilters && (
           <div

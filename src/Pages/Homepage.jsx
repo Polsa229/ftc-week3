@@ -15,7 +15,7 @@ import Footer from "../components/Footer";
 function Homepage() {
   document.title = "Ecommerce website";
   return (
-    <>
+    <div className="max-w-6xl mx-auto">
       <div id="hero">
         <AnimatedSection>
           <HeroSection />
@@ -56,7 +56,7 @@ function Homepage() {
           <Footer />
         </AnimatedSection>
       </div>
-    </>
+    </div>
   );
 }
 
