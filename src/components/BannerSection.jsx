@@ -1,7 +1,7 @@
 // @flow strict
 
 import * as React from "react";
-import HeroImage1 from "../assets/BannerImages.png";
+import BannerImages from "../assets/BannerImages.png";
 import { MdOutlinePlayCircle } from "react-icons/md";
 import { Link } from "react-router-dom";
 
@@ -13,7 +13,7 @@ function BannerSection() {
         <div className="hidden md:flex w-full md:w-full h-full justify-center items-end  relative overflow-hidden  ">
           <div className="absolute h-full w-full z-0 -bottom-[180px] -left-[50px] rounded-tl-[99px] rotate-[28.25deg] bg-secondary-80" />
           <img
-            src={HeroImage1}
+            src={BannerImages}
             alt="Woman with dog"
             className="object-contain rounded-xl w-[513px] h-[342px] transition-opacity duration-1000 ease-in-out relative z-20"
             style={{ borderRadius: "11.79px" }}
