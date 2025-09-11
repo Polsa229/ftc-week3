@@ -16,6 +16,7 @@ export default {
           100: "#00171F",
           60: "#667479",
           40: "#99A2A5",
+          20: "#CCD1D2",
         },
       },
       fontFamily: {

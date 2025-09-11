@@ -59,7 +59,7 @@ function ProductDetail() {
 
       <div className="text-center z-10">
         <AnimatedSection>
-          <div className="grid grid-cols-12 gap- justify-between rounded-lg md:p-2 border">
+          <div className="grid grid-cols-12 gap- justify-between rounded-lg mb-3 md:p-2 md:border">
             <div className="col-span-12 md:col-span-6 gap- justify-between items-center  rounded-lg">
               {productItem?.gallery && (
                 <ProductImgShown images={productItem.gallery} />

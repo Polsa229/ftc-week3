@@ -1,6 +1,7 @@
 // @flow strict
 
 import * as React from "react";
+import { Link } from "react-router-dom";
 
 function Breadcrumb({ items }) {
   return (
@@ -13,12 +14,12 @@ function Breadcrumb({ items }) {
               index === items.length - 1 ? "" : ""
             }`}
           >
-            <a
-              href={index === items.length - 1 ? "/#" : item.link}
-              className="hover:underline font-medium text-secondary-60 text-[14px]"
+            <Link
+              to={index === items.length - 1 ? "/" : item.link}
+              className="hover:underline font-medium text-secondary-60 py-2 text-[14px]"
             >
               {item.label}
-            </a>
+            </Link>
             {index < items.length - 1 && (
               <span className="text-secondary-60 text-[14px]">{">"}</span>
             )}

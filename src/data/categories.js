@@ -24,6 +24,224 @@ import LovelyPeople5 from "../assets/lovelyPeople/5.png";
 
 import ShibaInu1 from "../assets/dogs/ShibaInu1.png";
 
+// export const dogs = [
+//   {
+//     sku: 502,
+//     name: "Poodle Tiny Yellow",
+//     breed: "Poodle",
+//     age: "02 months",
+//     gender: "Female",
+//     location: "Vietnam",
+//     color: "Yellow",
+//     size: "Small",
+//     price: 3900000,
+//     gallery: [
+//       PoodleTinyYellow1,
+//       PoodleTinyYellow2,
+//       PoodleTinyYellow3,
+//       PoodleTinyYellow4,
+//       PoodleTinyYellow5,
+//     ],
+//     Publicate_date: "12-oct-2022",
+//     Additionnal_Informations:
+//       "Pure breed shih Tzu, Godd body structure. With MKA cert and Microchip. Father from champion lineage",
+//     vaccinated: true,
+//     dewormed: true,
+//     microchip: false,
+//     cert: true,
+//     reviews: [
+//       {
+//         author: "Customer 1",
+//         comment: "Très joueur et affectueux, parfait pour la famille !",
+//         photo: LovelyPeople1,
+//       },
+//       {
+//         author: "Customer 2",
+//         comment: "Un chiot adorable, en bonne santé.",
+//         photo: LovelyPeople2,
+//       },
+//       {
+//         author: "Customer 3",
+//         comment:
+//           "Facile à éduquer, il s'adapte très vite à son nouvel environnement.",
+//         photo: LovelyPeople3,
+//       },
+//       {
+//         author: "Customer 4",
+//         comment:
+//           "Toujours plein d'énergie, il adore les promenades et les câlins.",
+//         photo: LovelyPeople4,
+//       },
+//       {
+//         author: "Customer 5",
+//         comment: "Un compagnon fidèle et calme, parfait pour les enfants.",
+//         photo: LovelyPeople5,
+//       },
+//     ],
+//   },
+//   {
+//     sku: 102,
+//     name: "Poodle Tiny Sepia",
+//     breed: "Poodle",
+//     age: "02 months",
+//     gender: "Male",
+//     location: "Vietnam",
+//     color: "Sepia",
+//     size: "Small",
+//     price: 6000000,
+//     gallery: [
+//       PoodleTinySepia1,
+//       PoodleTinySepia2,
+//       PoodleTinySepia3,
+//       PoodleTinySepia4,
+//       PoodleTinySepia5,
+//     ],
+//     Publicate_date: "12-oct-2022",
+//     Additionnal_Informations:
+//       "Pure breed shih Tzu, Godd body structure. With MKA cert and Microchip. Father from champion lineage",
+//     vaccinated: true,
+//     dewormed: true,
+//     microchip: true,
+//     cert: true,
+
+//     reviews: [
+//       {
+//         author: "Customer 1",
+//         comment: "Très joueur et affectueux, parfait pour la famille !",
+//         photo: LovelyPeople1,
+//       },
+//       {
+//         author: "Customer 2",
+//         comment: "Un chiot adorable, en bonne santé.",
+//         photo: LovelyPeople2,
+//       },
+//       {
+//         author: "Customer 3",
+//         comment:
+//           "Facile à éduquer, il s'adapte très vite à son nouvel environnement.",
+//         photo: LovelyPeople3,
+//       },
+//       {
+//         author: "Customer 4",
+//         comment:
+//           "Toujours plein d'énergie, il adore les promenades et les câlins.",
+//         photo: LovelyPeople4,
+//       },
+//       {
+//         author: "Customer 5",
+//         comment: "Un compagnon fidèle et calme, parfait pour les enfants.",
+//         photo: LovelyPeople5,
+//       },
+//     ],
+//   },
+//   {
+//     sku: 512,
+//     name: "Alaskan Malamute Grey",
+//     breed: "Alaskan Malamute",
+//     age: "02 months",
+//     gender: "Male",
+//     location: "Vietnam",
+//     color: "Grey",
+//     size: "Small",
+//     price: 8900000,
+//     gallery: [
+//       AlaskanMalamute1,
+//       AlaskanMalamute2,
+//       AlaskanMalamute3,
+//       AlaskanMalamute4,
+//       AlaskanMalamute5,
+//     ],
+//     Publicate_date: "12-oct-2022",
+//     Additionnal_Informations:
+//       "Pure breed shih Tzu, Godd body structure. With MKA cert and Microchip. Father from champion lineage",
+//     vaccinated: true,
+//     dewormed: true,
+//     microchip: true,
+//     cert: true,
+
+//     reviews: [
+//       {
+//         author: "Customer 1",
+//         comment: "Très joueur et affectueux, parfait pour la famille !",
+//         photo: LovelyPeople1,
+//       },
+//       {
+//         author: "Customer 2",
+//         comment: "Un chiot adorable, en bonne santé.",
+//         photo: LovelyPeople2,
+//       },
+//       {
+//         author: "Customer 3",
+//         comment:
+//           "Facile à éduquer, il s'adapte très vite à son nouvel environnement.",
+//         photo: LovelyPeople3,
+//       },
+//       {
+//         author: "Customer 4",
+//         comment:
+//           "Toujours plein d'énergie, il adore les promenades et les câlins.",
+//         photo: LovelyPeople4,
+//       },
+//       {
+//         author: "Customer 5",
+//         comment: "Un compagnon fidèle et calme, parfait pour les enfants.",
+//         photo: LovelyPeople5,
+//       },
+//     ],
+//   },
+//   {
+//     sku: 10078,
+//     name: "Shiba Inu Sepia",
+//     breed: "Shiba Inu",
+//     age: "02 months",
+//     gender: "Female",
+//     location: "Vietnam",
+//     color: "Apricot & Tan",
+//     size: "Small",
+//     price: 34000000,
+//     gallery: [ShibaInu1, ShibaInu1],
+//     Publicate_date: "12-oct-2022",
+//     Additionnal_Informations:
+//       "Pure-bred Shiba Inu. Good body structure. With MKA cert and Microchip. Father from champion lineage.",
+//     vaccinated: true,
+//     dewormed: true,
+//     microchip: true,
+//     cert: true,
+
+//     reviews: [
+//       {
+//         author: "Customer 1",
+//         comment: "Très joueur et affectueux, parfait pour la famille !",
+//         photo: LovelyPeople1,
+//       },
+//       {
+//         author: "Customer 2",
+//         comment: "Un chiot adorable, en bonne santé.",
+//         photo: LovelyPeople2,
+//       },
+//       {
+//         author: "Customer 3",
+//         comment:
+//           "Facile à éduquer, il s'adapte très vite à son nouvel environnement.",
+//         photo: LovelyPeople3,
+//       },
+//       {
+//         author: "Customer 4",
+//         comment:
+//           "Toujours plein d'énergie, il adore les promenades et les câlins.",
+//         photo: LovelyPeople4,
+//       },
+//       {
+//         author: "Customer 5",
+//         comment: "Un compagnon fidèle et calme, parfait pour les enfants.",
+//         photo: LovelyPeople5,
+//       },
+//     ],
+//   },
+// ];
+
+
+// Liste complète des chiens avec toutes les propriétés
 export const dogs = [
   {
     sku: 502,
@@ -80,61 +298,6 @@ export const dogs = [
     ],
   },
   {
-    sku: 102,
-    name: "Poodle Tiny Sepia",
-    breed: "Poodle",
-    age: "02 months",
-    gender: "Male",
-    location: "Vietnam",
-    color: "Sepia",
-    size: "Small",
-    price: 6000000,
-    gallery: [
-      PoodleTinySepia1,
-      PoodleTinySepia2,
-      PoodleTinySepia3,
-      PoodleTinySepia4,
-      PoodleTinySepia5,
-    ],
-    Publicate_date: "12-oct-2022",
-    Additionnal_Informations:
-      "Pure breed shih Tzu, Godd body structure. With MKA cert and Microchip. Father from champion lineage",
-    vaccinated: true,
-    dewormed: true,
-    microchip: true,
-    cert: true,
-
-    reviews: [
-      {
-        author: "Customer 1",
-        comment: "Très joueur et affectueux, parfait pour la famille !",
-        photo: LovelyPeople1,
-      },
-      {
-        author: "Customer 2",
-        comment: "Un chiot adorable, en bonne santé.",
-        photo: LovelyPeople2,
-      },
-      {
-        author: "Customer 3",
-        comment:
-          "Facile à éduquer, il s'adapte très vite à son nouvel environnement.",
-        photo: LovelyPeople3,
-      },
-      {
-        author: "Customer 4",
-        comment:
-          "Toujours plein d'énergie, il adore les promenades et les câlins.",
-        photo: LovelyPeople4,
-      },
-      {
-        author: "Customer 5",
-        comment: "Un compagnon fidèle et calme, parfait pour les enfants.",
-        photo: LovelyPeople5,
-      },
-    ],
-  },
-  {
     sku: 512,
     name: "Alaskan Malamute Grey",
     breed: "Alaskan Malamute",
@@ -142,7 +305,7 @@ export const dogs = [
     gender: "Male",
     location: "Vietnam",
     color: "Grey",
-    size: "Small",
+    size: "Large",
     price: 8900000,
     gallery: [
       AlaskanMalamute1,
@@ -158,7 +321,6 @@ export const dogs = [
     dewormed: true,
     microchip: true,
     cert: true,
-
     reviews: [
       {
         author: "Customer 1",
@@ -197,9 +359,9 @@ export const dogs = [
     gender: "Female",
     location: "Vietnam",
     color: "Apricot & Tan",
-    size: "Small",
+    size: "Medium",
     price: 34000000,
-    gallery: [ShibaInu1, ShibaInu1],
+    gallery: [ShibaInu1],
     Publicate_date: "12-oct-2022",
     Additionnal_Informations:
       "Pure-bred Shiba Inu. Good body structure. With MKA cert and Microchip. Father from champion lineage.",
@@ -207,7 +369,6 @@ export const dogs = [
     dewormed: true,
     microchip: true,
     cert: true,
-
     reviews: [
       {
         author: "Customer 1",
@@ -234,6 +395,115 @@ export const dogs = [
       {
         author: "Customer 5",
         comment: "Un compagnon fidèle et calme, parfait pour les enfants.",
+        photo: LovelyPeople5,
+      },
+    ],
+  },
+  {
+    sku: 10079,
+    name: "Labrador Retriever",
+    breed: "Labrador",
+    age: "03 months",
+    gender: "Male",
+    location: "USA",
+    color: "Black",
+    size: "Large",
+    price: 2500000,
+    gallery: [AlaskanMalamute1, AlaskanMalamute2], // Utilisation d'images existantes
+    Publicate_date: "15-nov-2022",
+    Additionnal_Informations:
+      "Labrador Retriever pure race, excellent tempérament, idéal pour les familles.",
+    vaccinated: true,
+    dewormed: true,
+    microchip: true,
+    cert: true,
+    reviews: [
+      {
+        author: "Customer 6",
+        comment: "Un chien incroyablement intelligent et loyal!",
+        photo: LovelyPeople1,
+      },
+      {
+        author: "Customer 7",
+        comment: "Parfait avec les enfants, nous sommes ravis!",
+        photo: LovelyPeople2,
+      },
+    ],
+  },
+  {
+    sku: 10080,
+    name: "Golden Retriever",
+    breed: "Retriever",
+    age: "04 months",
+    gender: "Female",
+    location: "Canada",
+    color: "Golden",
+    size: "Large",
+    price: 2800000,
+    gallery: [PoodleTinyYellow1, PoodleTinyYellow2], // Utilisation d'images existantes
+    Publicate_date: "20-nov-2022",
+    Additionnal_Informations:
+      "Golden Retriever de pure race, très doux et affectueux.",
+    vaccinated: true,
+    dewormed: true,
+    microchip: true,
+    cert: true,
+    reviews: [
+      {
+        author: "Customer 8",
+        comment: "Le chien le plus doux que nous ayons jamais eu!",
+        photo: LovelyPeople3,
+      },
+    ],
+  },
+  {
+    sku: 10081,
+    name: "German Shepherd",
+    breed: "Shepherd",
+    age: "03 months",
+    gender: "Male",
+    location: "Germany",
+    color: "Black & Tan",
+    size: "Large",
+    price: 3200000,
+    gallery: [ShibaInu1], // Utilisation d'images existantes
+    Publicate_date: "05-dec-2022",
+    Additionnal_Informations:
+      "Berger Allemand de lignée de travail, très intelligent et protecteur.",
+    vaccinated: true,
+    dewormed: true,
+    microchip: true,
+    cert: true,
+    reviews: [
+      {
+        author: "Customer 9",
+        comment: "Incroyablement intelligent et facile à dresser!",
+        photo: LovelyPeople4,
+      },
+    ],
+  },
+  {
+    sku: 10082,
+    name: "French Bulldog",
+    breed: "Bulldog",
+    age: "02 months",
+    gender: "Female",
+    location: "France",
+    color: "Brindle",
+    size: "Small",
+    price: 4500000,
+    gallery: [PoodleTinySepia1, PoodleTinySepia2], // Utilisation d'images existantes
+    Publicate_date: "10-dec-2022",
+    Additionnal_Informations:
+      "Bouledogue Français de pure race, caractère joyeux et adapté à la vie en appartement.",
+    vaccinated: true,
+    dewormed: true,
+    microchip: true,
+    cert: true,
+    reviews: [
+      {
+        author: "Customer 10",
+        comment: "Parfait pour notre appartement, si affectueux!",
         photo: LovelyPeople5,
       },
     ],

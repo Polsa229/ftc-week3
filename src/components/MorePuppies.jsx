@@ -5,7 +5,7 @@ import { dogs } from "../data/categories";
 import ProductCard from "./ProductCard";
 
 function MorePuppies() {
-  const items = React.useMemo(() => dogs.slice(0, 8), []);
+  const items = React.useMemo(() => dogs.slice(0, 6), []);
 
   return (
     <section className="h-full w-full py-12 px-4">

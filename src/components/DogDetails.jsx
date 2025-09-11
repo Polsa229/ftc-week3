@@ -48,7 +48,7 @@ function DogDetails({ dog }) {
 
   return (
     <div className="text-start">
-      <div className="border md:border-0 rounded-lg px-6 mb-2">
+      <div className="border  rounded-lg px-6 mb-2">
         <div className="flex md:hidden justify-center py-4">
           <div className="bg-[#CCD1D2] h-[6px] w-[40px] rounded-[10px]" />
         </div>
