@@ -45,7 +45,7 @@ function HeroImageSlider() {
       onClick={handleChangeSlide}
       src={images[currentIndex]}
       alt=""
-      className="object-fit lg:object-contain rounded-xl z-10 relative w-full h-full transition-opacity duration-1000 ease-in-out cursor-pointer"
+      className="object-fit rounded-xl z-10 relative w-full h-full transition-opacity duration-1000 ease-in-out cursor-pointer"
       style={{
         borderRadius: "11.79px",
       }}
